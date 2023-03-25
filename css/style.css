@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    padding: 20px 0 30px;
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    padding: 20px 0px 0px;
+    margin-right: 0px;
+}
+
+.collapse>ul>li>a.active:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .5s;
+}
+
+.hero {
+    background-image: url(../images/bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.fw-bolder {
+    font-weight: 800 !important;
+}
+
+.i-am {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.typer {
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.fs-45 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.Typewriter__wrapper,
+.Typewriter__cursor {
+    font-size: 3rem;
+}
+
+.Main-icons {
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+}
+
+.fa-brands {
+    line-height: 35px;
+}
+
+.section-padding {
+    padding: 100px 0px 70px;
+}
+
+.doted::after {
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.sub-title {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.color-748182 {
+    color: #748182;
+}
+
+.skills-progress {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    position: relative;
+}
+
+.skills-progress h6 {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.skills-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    transition: all 1s;
+}
+
+.skills-progress span:after {
+    content: attr(data-value);
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.cvbtn {
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all .5s;
+    background: #1c1c1c;
+    color: #eee;
+}
+
+.Contbtn {
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all .5s;
+    color: #000;
+}
+
+.cvbtn:hover {
+    background: transparent;
+    color: #343434;
+}
+
+.Contbtn:hover {
+    background: #1c1c1c;
+    color: #eee;
+}
+
+.section-head {
+    margin-bottom: 80px;
+}
+
+.section-head h3:after {
+    content: '';
+    width: 100%;
+    height: 30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+
+.itemserv {
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.itemserv .icon {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all .5s;
+    display: inline-block;
+}
+
+.itemserv .icon .fa,
+.itemserv .icon .fa-regular {
+    line-height: 70px;
+}
+
+.itemserv:hover .icon {
+    background: #1c1c1c;
+    color: #eee;
+}
+
+.filter span:before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background: #111;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: all .4s;
+    z-index: -1;
+}
+
+.filter .active:before {
+    width: 95%;
+}
+
+.item-ovl {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all .5s;
+    z-index: 2;
+    transform: translateY(10px);
+}
+
+.ovl-hov:hover .item-ovl {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.mid {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+
+.Picon i {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    text-decoration: none;
+    line-height: 28px;
+}
+
+.Picon i:hover {
+    background: transparent;
+    color: #000;
+}
+
+.author-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+.carousel-indicators button {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 5px 7px !important;
+    background: #D6D6D6 !important;
+    border-radius: 30px !important;
+    border: 0px !important;
+}
+
+.carousel-indicators button:hover,
+.carousel-indicators button.active {
+    background: #869791 !important;
+}
+
+.bl-scale {
+    transition: all .5s;
+}
+
+.bl-scale:hover {
+    transform: scale(1.15);
+}
+
+.fs-12p {
+    font-size: 12px;
+    color: #888;
+    font-weight: 600;
+    margin-bottom: 10px
+}
+
+.UL {
+    border-bottom: 2px solid #333;
+}
+
+.Cicon i {
+    font-size: 25px;
+    margin-bottom: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.Chov:hover .Cicon i {
+    background: #1c1c1c;
+    color: #eee;
+}
+
+.form-control {
+    background: #f4f4f4;
+}
+
+.form-control:focus {
+    background: #f4f4f4;
+    border-color: #ced4da;
+}
+
+.Sbmtbtn {
+    background: #1c1c1c;
+    color: #eee;
+    padding: 10px 40px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all .5s;
+    display: block;
+}
+
+.Sbmtbtn:hover {
+    background: transparent;
+    color: #343434
+}
